@@ -76,13 +76,13 @@ h1 {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
+    transition: 1s ease;
     background-color: #008CBA;
   }
   
   .container:hover .overlay {
     opacity: 1;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.6); 
   }
   
   .text {
@@ -96,5 +96,24 @@ h1 {
     transform: translate(-50%, -50%);
     text-align: left;
   }
+
+  .special {
+   animation-play-state: paused;
+  }
+
+  .special:hover {
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+  }
+  .special:hover .overlay {
+    opacity: 1;
+    background: rgba(255, 0, 0, 0.6);
+  }
+  h1 {
+    animation-duration: 3s;
+  }
+
+  
 
   
